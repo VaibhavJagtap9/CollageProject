@@ -1,0 +1,48 @@
+/* src/components/Footer.module.css */
+
+.footer {
+  background-color: #1f2a30;
+  color: white;
+  padding: 20px 0;
+  width: 100vw; /* Full viewport width */
+  position: fixed; /* Fixes the footer to the bottom */
+  bottom: 0; /* Aligns it to the bottom of the viewport */
+  left: 0; /* Aligns it to the left of the viewport */
+  z-index: 1000; /* Ensures it stays on top of other content */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%; /* Ensures the container spans full width */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.contact, .contactDetails, .copyright {
+  flex: 1;
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.address {
+  font-style: normal;
+  line-height: 1.6;
+  white-space: nowrap; /* Prevents the text from wrapping to a new line */
+  overflow: hidden; /* Hides any overflowing text */
+  text-overflow: ellipsis; /* Adds ellipsis if text overflows */
+}
+
+.email a, .copyright a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.email, .phone, .copyright {
+  margin-bottom: 10px;
+}

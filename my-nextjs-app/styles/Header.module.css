@@ -1,0 +1,47 @@
+/* src/styles/Header.module.css */
+
+.header {
+  background-color: #004c6d;
+  color: white;
+  padding: 5px 0; /* Reduced padding */
+  width: 100vw; /* Full viewport width */
+  position: fixed; /* Fixes the header to the top */
+  top: 0; /* Aligns it to the top of the viewport */
+  left: 0; /* Aligns it to the left of the viewport */
+  z-index: 1000; /* Ensures it stays on top of other content */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%; /* Ensures the container spans full width */
+}
+
+.logo {
+  height: 120px; /* Adjusted height */
+  margin-right: 20px;
+}
+
+.titleContainer {
+  flex: 1;
+}
+
+.headerTitle {
+  margin: 0;
+  font-size: 16px; /* Reduced font size */
+  font-weight: normal;
+}
+
+.headerSubtitle {
+  margin: 5px 0 0;
+  font-size: 20px; /* Reduced font size */
+  font-weight: bold;
+}
+
+.headerText {
+  margin: 5px 0 0;
+  font-size: 12px; /* Reduced font size */
+}
